@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+
+  <h2>Delicious Restaurant</h2>
+  <p>Place Your Order</p>
+
+</center>
+
+<script>
+
+const person = {
+  Nuggets: 8.5,
+  Burger: 6,
+  Coke: 2,
+  };
+
+
+function Nuggets(a) {
+    var qty;
+
+    if (a==1) {
+    qty=1;
+    }
+
+    else if (a==2) {
+    qty=2;
+    }
+
+    else if (a==3) {
+    qty=3;
+    }
+
+    else {
+    qty=0;
+    }
+
+    document.getElementById("demo0").innerHTML = person.Nuggets*qty;
+    document.getElementById("demo1").innerHTML = qty;
+    }
+
+function Burger(b) {
+    var qty;
+
+    if (b==1) {
+    qty=1;
+    }
+
+    else if (b==2) {
+    qty=2;
+    }
+
+    else if (b==3) {
+    qty=3;
+    }
+
+    else {
+    qty=0;
+    }
+
+    document.getElementById("demo2").innerHTML = person.Burger*qty;
+    document.getElementById("demo3").innerHTML = qty;
+    }
+
+    function Coke(c) {
+    var qty;
+
+    if (c==1) {
+    qty=1;
+    }
+
+    else if (c==2) {
+    qty=2;
+    }
+
+    else if (c==3) {
+    qty=3;
+    }
+
+    else {
+    qty=0;
+    }
+
+    document.getElementById("demo4").innerHTML = person.Coke*qty;
+    document.getElementById("demo5").innerHTML = qty;
+    }
+</script>
+
+
+<center>
+
+<table border="1" width="400">
+<tr>
+<td align="center"><button type="button" onclick="Nuggets(1)">ONE</button><br>
+  <button type="button" onclick="Nuggets(2)">TWO</button><br>
+  <button type="button" onclick="Nuggets(3)">THREE</button><br>
+  <button type="button" onclick="Nuggets(4)">Clear</button></td><td align="center"><img src="nuggets.png" width="100"><br>$8.50</td><td>quantity<br><div id="demo1"></div><br>Subtotal<div id="demo0"></div></td>
+</tr>
+</table>
+
+<table border="1" width="400">
+    <tr>
+    <td align="center"><button type="button" onclick="Burger(1)">ONE</button><br>
+      <button type="button" onclick="Burger(2)">TWO</button><br>
+      <button type="button" onclick="Burger(3)">THREE</button><br>
+      <button type="button" onclick="Burger(4)">Clear</button></td><td align="center"><img src="big-mac.png" width="100"><br>$6.00</td><td>quantity<br><div id="demo3"></div><br>Subtotal<div id="demo2"></div></td>
+    </tr>
+    </table>
+
+    <table border="1" width="400">
+        <tr>
+        <td align="center"><button type="button" onclick="Coke(1)">ONE</button><br>
+          <button type="button" onclick="Coke(2)">TWO</button><br>
+          <button type="button" onclick="Coke(3)">THREE</button><br>
+          <button type="button" onclick="Coke(4)">Clear</button></td><td align="center"><img src="coke.png" width="100"><br>$2.00</td><td>quantity<br><div id="demo5"></div><br>Subtotal<div id="demo4"></div></td>
+        </tr>
+
+
+
+</center>
+</body>
+</html>
